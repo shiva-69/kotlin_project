@@ -3,7 +3,8 @@ fun main() {
     val numbers = arrayOf(1, 3, 5, 6, 7);
     val isMax = false;
     val result = getMaxorMinValue(numbers, isMax)
-    println(result)
+//    println(result)
+    evenOrOdd(6)
 }
 
 fun getMaxorMinValue(numbers: Array<Int>, isMax: Boolean): Int {
@@ -23,5 +24,13 @@ fun getMaxorMinValue(numbers: Array<Int>, isMax: Boolean): Int {
             }
         }
         return min
+    }
+}
+fun evenOrOdd(num: Int){
+    if(num%2 == 0){
+        println("Even")
+    }
+    else{
+        println("Odd")
     }
 }
